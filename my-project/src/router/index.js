@@ -23,6 +23,12 @@ export const constantRoutes = [
       component: () => import('@/views/login/index'),
       hidden: true
     },
+    {
+      path: '/hello-world',
+      name: 'HelloWorld',
+      component: () => import('@/views/hello-world/index'),
+      meta: { title: 'Hello World' }
+    },
     { path: '/dashboard', component: () => import('@/views/dashboard/index'), hidden: true },
     {
       path:'/system',
