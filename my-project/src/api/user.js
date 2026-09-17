@@ -15,6 +15,14 @@ export function logout() {
   })
 }
 
+export function getUserInfo(token) {
+  return request({
+    url: '/vue-admin-template/user/info',
+    method: 'get',
+    params: { token }
+  })
+}
+
 export function test(message) {
   return request({
     url: '/vue-admin-template/user/test',
