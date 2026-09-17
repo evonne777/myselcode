@@ -1,4 +1,4 @@
-import { login, logout, test } from '@/api/user'
+import { login, logout, test, getUserInfo } from '@/api/user'
   //数据，相当于data
   const state = {
 
@@ -37,6 +37,16 @@ import { login, logout, test } from '@/api/user'
       return new Promise((resolve, reject) => {
         logout().then(() => {
           resolve()
+        }).catch(err => {
+          reject(err)
+        })
+      })
+    },
+    getInfo({ commit }, token) {
+      return new Promise((resolve, reject) => {
+        getUserInfo(token).then(response => {
+          const { data } = response
+          resolve(data)
         }).catch(err => {
           reject(err)
         })
