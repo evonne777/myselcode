@@ -8,3 +8,6 @@ vue-element-admin-master/vue-element-admin-master/
 
 # CodeBuddy 并行开发临时工作区（不提交）
 .codebuddy/worktrees/
+
+# my-project 下指向仓库根 .codebuddy 的软链接（本地便利设施，不提交）
+my-project/.codebuddy
