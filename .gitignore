@@ -5,3 +5,6 @@ dist/
 *.log
 .trae/
 vue-element-admin-master/vue-element-admin-master/
+
+# CodeBuddy 并行开发临时工作区（不提交）
+.codebuddy/worktrees/
